@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Halo!</title>
+    <title>Halo Ayangkuu❤️!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
@@ -11,8 +11,8 @@
   <body>
     <div id="foto" class="foto" style="display:none">
 <div class="image">
-<!-- Foto Kamu --><img id="ftKm" src="https://i.postimg.cc/8zxYn2xG/FB-IMG-16354292315443416.jpg" width="100px" height="100px"/>
-<!-- Foto Aku --><img id="ftAk" style="opacity:0;position:absolute;" src="https://i.postimg.cc/KzDsjRjc/FB-IMG-16354292358400063.jpg" width="100px" height="100px"/></div>
+<!-- Foto Kamu --><img id="ftKm" src="https://i.postimg.cc/BQjC3ZMG/IMG-20230610-WA0052.jpg" width="100px" height="100px"/>
+<!-- Foto Aku --><img id="ftAk" style="opacity:0;position:absolute;" src="https://i.postimg.cc/KY2wqpBw/IMG-20230908-024338.jpg" width="100px" height="100px"/></div>
 <!-- Nama Kamu --><span id="sp1"><b id="namamu"></b><div id="lope" style="display:inline-block;align-items:center;justify-content:center;">&#9829;</div></span>
 <div id="sp2" style="display:none;"><span style="font-size:13px;" id="text3"></span></div>
 <div id="sp3" style="display:none;"><span id="text4"></span></div>
@@ -48,32 +48,32 @@
                     document.getElementById("namamu").innerHTML = "Halo, " + nama + "!";                    
                 } else {
                     await swals.fire('Isi namanya ayanggg');
-                    await swals.fire('Gak boleh kosong');
+                    await swals.fire('Ngga boleh kosong');
                     mulai();
                 }
             }
             mulai()
             async function lanjutan(){
                     var { value: sayang } = await swals.fire({
-                        title: `Sebelumnya, ${nama} sayang gak sama ${author} :(`,
+                        title: `Sebelumnya, ${nama} sayang ngga sama ${author} :(`,
                         showDenyButton: true,
                         showCancelButton: false,
                         confirmButtonText: 'Sayang',
-                        denyButtonText: `Gak sayang`,
+                        denyButtonText: `ngga sayang`,
                         allowOutsideClick: false,
                     }).then((result) => {
                         if (result.isConfirmed) {
                              window.sayang = "sayang";lanjutan2();    
-                        } else if (result.isDenied) {window.sayang = "enggak sayang";window.persen = "%3A%2F";Swal.fire('Yaudah deh:(');whs();}})}
+                        } else if (result.isDenied) {window.sayang = "ngga sayang";window.persen = "%3A%2F";Swal.fire('Yaudah deh:(');whs();}})}
   
                     async function lanjutan2(){
                         var { value: persen } = await swals.fire({
                             title: 'Seberapa sayang?',
                             icon: 'question',
                             input: 'range',
-                            inputLabel: 'Antara 90-100% ya',
+                            inputLabel: 'Antara 10-100% ya',
                             inputAttributes: {
-                                min: 90,
+                                min: 10,
                                 max: 100,
                             },
                             allowOutsideClick: false,
@@ -81,7 +81,7 @@
                         });
                         if(persen){
                         	window.persen = persen + '%25';
-                        	await swals.fire(`Maacii udah sayang sama ${author} ${persen}%`);
+                        	await swals.fire(`Maaciii ayang udah sayang sama ${author} ${persen}%`);
                             iloveu();siap();whs();
                             }
                         }
